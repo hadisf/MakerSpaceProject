@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partners</title>
+    <link rel="stylesheet" href="partners-section.component.css" />
+
+    <!-- <style>
+      @media screen and (max-width: 600px) {
+        #partners h2 {
+          width: 470px;
+          color: #fff;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 54px;
+          text-align: center;
+          margin-right: 1rem;
+          margin-left: 1.3rem;
+        }
+        #partners p {
+          width: 400px;
+          color: rgba(255, 255, 255, 0.75);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: center;
+          margin-left: 3.3rem;
+        }
+
+        .primary-btn-partners {
+          margin-left: 10rem;
+          margin-top: -0.01rem;
+          padding: 13px 25px;
+        }
+
+        #partners {
+          margin-top: 2rem;
+          margin-left: -4rem;
+        }
+
+        .partners-wrapper {
+          max-width: 527px;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="partnersSection">
+      <div class="partnersContent container">
+        <h1>We work with partners to create impactful programs</h1>
+        <p>
+          Our strategic partners help us in propelling the next wave of
+          entrepreneurs by partnering with the Makerspace for specialized
+          programs, enterprise innovation and more.
+        </p>
+        <div class="readMore-Btn">
+          <a href="">Ready to partner</a>
+        </div>
+      </div>
+
+      <div class="partnersSlider-ctn slider-container">
+
+        <swiper
+          [slidesPerView]="2"
+          [spaceBetween]="5"
+          [navigation]="true"
+          [pagination]="{ clickable: true}"
+          [autoplay]="{ delay: 2500, disableOnInteraction: false }"
+
+        >
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+  </body>
+</html>

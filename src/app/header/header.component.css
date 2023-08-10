@@ -1,0 +1,13 @@
+
+
+@media only screen and (max-width: 767px) {
+  #site-pages ul:first-child li:first-child {
+    display: none;
+  }
+  #site-pages ul:nth-child(2) {
+    display: none;
+  }
+  .header-social {
+    display: none;
+  }
+}

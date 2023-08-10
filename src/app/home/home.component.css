@@ -1,0 +1,18 @@
+@media only screen and (max-width: 480px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    gap: 96px; /* Aralık olarak 96 piksel bırak */
+  }
+
+  .offer-wrapper {
+    width: 100%;
+  }
+
+  /* Paragrafın mobil görünümde sığacak şekilde düzenleme */
+  .we-offer-p {
+    white-space: normal;
+    text-align: center;
+    font-size: 10px;
+  }
+}
