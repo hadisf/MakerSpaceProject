@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="slider1.component.css" />
   </head>
@@ -28,7 +31,7 @@
         </div>
         <div class="slider-content-wrapper-1">
           <div class="slider-slide" *ngFor="let slide of slides">
-            <img [src]="slide.imgSrc" [alt]="slide.alt" />
+            <img [src]="slide.imgSrc" [alt]="slide.alt" class="slider-2-img" />
             <div class="slider-slide-details">
               <h5 class="date">{{ slide.date }}</h5>
               <h4 class="slider-2-h4">{{ slide.title }}</h4>

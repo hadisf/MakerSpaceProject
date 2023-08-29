@@ -6,19 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
-  ngOnInit() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+  isNavbarOpen: boolean = false;
 
-    // Null kontrolü yaparak ve non-null asertion operatörünü kullanarak güncelledik.
-    if (hamburger && navMenu) {
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-      });
-    }
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
   }
+  constructor() {}
+  ngOnInit() {}
   closeContent() {
     const container = document.querySelector('.container');
     const closeButton = document.querySelector('.close-button');

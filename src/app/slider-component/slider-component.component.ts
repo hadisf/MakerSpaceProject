@@ -16,8 +16,7 @@ export class SliderComponentComponent implements OnInit {
     {
       imgSrc: 'assets/img/covid1.png',
       category: 'WORKSHOP',
-      title:
-        'Our view on "Reflection of the impact of COVID-19 on digital market demands"',
+      title: 'Fuqia e pasionit dhe këmbënguljes për një biznes të suksesshëm"',
       date: 'Feb 28, 2023',
     },
     {
@@ -41,8 +40,7 @@ export class SliderComponentComponent implements OnInit {
     {
       imgSrc: 'assets/img/covid1.png',
       category: 'WORKSHOP',
-      title:
-        'Our view on "Reflection of the impact of COVID-19 on digital market demands"',
+      title: 'Fuqia e pasionit dhe këmbënguljes për një biznes të suksesshëm"',
       date: 'Feb 28, 2023',
     },
     {

@@ -31,58 +31,7 @@ export class PartnersSectionComponent implements AfterViewInit {
 
   constructor() {}
 
-    // initializeSwiper() {
-    //   if (this.mySwiper) {
-    //     this.mySwiper = new Swiper('.swiper-container', {
-    //       slidesPerView: 1,
-    //       allowTouchMove: false,
-    //       spaceBetween: 5,
-    //       loop: true,
-
-    //       navigation: {
-    //         prevEl: '#prevArrowPt',
-    //         nextEl: '#nextArrowPt',
-    //       },
-
-    //       pagination: {
-    //         el: '.swiper-pagination',
-    //         clickable: true,
-    //         type: 'bullets',
-    //         renderBullet: (index, className) => {
-    //           return `<span class="${className} custom-bullet">${
-    //             index + 1
-    //           }</span>`;
-    //         },
-    //       },
-    //     });
-    //   }
-    // }
-  // initializeSwiper() {
-  //   this.swiper = new Swiper('.swiper-container', {
-  //     slidesPerView: 2,
-  //     loop: true,
-  //     spaceBetween: 5,
-  //     loopedSlides: Math.ceil(this.partnerItemsTransformed.length),
-  //     navigation: {
-  //       prevEl: '#prevArrowPt',
-  //       nextEl: '#nextArrowPt',
-  //     },
-  //     pagination: { clickable: true },
-  //   });
-  // }
-
-  // prevSlide() {
-  //   if (this.mySwiper) {
-  //     this.mySwiper.slidePrev();
-  //   }
-  // }
-
-  // nextSlide() {
-  //   if (this.mySwiper) {
-  //     this.mySwiper.slideNext();
-  //   }
-  // }
-
+  
   ngAfterViewInit(): void {
     this.partnerItemsTransformed = this.partnerTransformation();
 
