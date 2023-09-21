@@ -20,6 +20,7 @@ import { SubNavbarComponent } from './sub-navbar/sub-navbar.component';
 import { MobAboutPartnersComponent } from './mob-about-partners/mob-about-partners.component';
 import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
 import { LandscapeAPartnersComponent } from './landscape-a-partners/landscape-a-partners.component';
+import { AboutTeamComponent } from './about-team/about-team.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { LandscapeAPartnersComponent } from './landscape-a-partners/landscape-a-
     MobAboutPartnersComponent,
     PortfolioAboutComponent,
     LandscapeAPartnersComponent,
+    AboutTeamComponent,
   ],
 
   imports: [

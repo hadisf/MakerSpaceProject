@@ -15,6 +15,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MobAboutPartnersComponent } from './mob-about-partners/mob-about-partners.component';
 import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
 import { LandscapeAPartnersComponent } from './landscape-a-partners/landscape-a-partners.component';
+import { AboutTeamComponent } from './about-team/about-team.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'mob-about-partners', component: MobAboutPartnersComponent },
   { path: 'protfolio-about', component: PortfolioAboutComponent },
   { path: 'landscape-a-partners', component: LandscapeAPartnersComponent },
+  { path: 'about-team', component: AboutTeamComponent },
 ];
 
 @NgModule({

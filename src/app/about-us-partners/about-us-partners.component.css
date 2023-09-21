@@ -5,8 +5,6 @@
 /* Import the Swiper pagination styles */
 @import "swiper/css/pagination";
 
-@import "/node_modules/swiper/swiper-bundle.min.css";
-@import "/node_modules/swiper/swiper-bundle.css";
 
 .partnersSection {
   display: inline-flex;
@@ -85,7 +83,7 @@ a {
 }
 
 .swiper-button-next {
-  margin-right: 11rem;
+  margin-right: 10rem;
 }
 
 .mob-about-partners {

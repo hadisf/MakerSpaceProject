@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="team">
+      <div class="team-h2">Our Team</div>
+      <div class="team-categories">
+        <span *ngFor="let category of teamCategories">{{ category }}</span>
+      </div>
+      <img
+        src="assets/img/our-team-selectmenu.png"
+        class="our-team-selectmenu"
+      />
+
+      <div class="team-wrapper">
+        <div class="photo-wrapper" *ngFor="let member of teamMembers">
+          <img [src]="member.photo" class="imgs" />
+          <div class="team-member-details">
+            <div class="name-detail">
+              <h6>{{ member.name }}</h6>
+              <p>{{ member.position }}</p>
+            </div>
+            <img
+              src="assets/img/about-team-social.png"
+              class="about-team-social"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="photo-wrapper" *ngFor="let member of teamMembers">
+          <img [src]="member.photo" class="imgs" />
+          <div class="team-member-details">
+            <div class="name-detail">
+              <h6>{{ member.name }}</h6>
+              <p>{{ member.position }}</p>
+            </div>
+            <img
+              src="assets/img/about-team-social.png"
+              class="about-team-social"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
