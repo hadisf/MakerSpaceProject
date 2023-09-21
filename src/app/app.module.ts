@@ -13,6 +13,13 @@ import { Slider1Component } from './slider1/slider1.component';
 import { CloseContentComponentComponent } from './close-content-component/close-content-component.component';
 import { FooterComponent } from './footer/footer.component';
 import { SwiperModule } from 'swiper/angular';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { AboutUsPartnersComponent } from './about-us-partners/about-us-partners.component';
+import { ProvenSuccessComponent } from './proven-success/proven-success.component';
+import { SubNavbarComponent } from './sub-navbar/sub-navbar.component';
+import { MobAboutPartnersComponent } from './mob-about-partners/mob-about-partners.component';
+import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
+import { LandscapeAPartnersComponent } from './landscape-a-partners/landscape-a-partners.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +31,13 @@ import { SwiperModule } from 'swiper/angular';
     Slider1Component,
     CloseContentComponentComponent,
     FooterComponent,
+    AboutUsComponent,
+    AboutUsPartnersComponent,
+    ProvenSuccessComponent,
+    SubNavbarComponent,
+    MobAboutPartnersComponent,
+    PortfolioAboutComponent,
+    LandscapeAPartnersComponent,
   ],
 
   imports: [
@@ -31,7 +45,7 @@ import { SwiperModule } from 'swiper/angular';
     AppRoutingModule,
     NgxPaginationModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

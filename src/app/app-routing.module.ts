@@ -8,8 +8,13 @@ import { FooterComponent } from './footer/footer.component';
 import { Slider1Component } from './slider1/slider1.component';
 import { PartnersSectionComponent } from './partners-section/partners-section.component';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { SubNavbarComponent } from './sub-navbar/sub-navbar.component';
+import { ProvenSuccessComponent } from './proven-success/proven-success.component';
+import { AboutUsPartnersComponent } from './about-us-partners/about-us-partners.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { MobAboutPartnersComponent } from './mob-about-partners/mob-about-partners.component';
+import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
+import { LandscapeAPartnersComponent } from './landscape-a-partners/landscape-a-partners.component';
 
 const routes: Routes = [
   {
@@ -26,6 +31,13 @@ const routes: Routes = [
   { path: 'slider1', component: Slider1Component },
   { path: 'footer', component: FooterComponent },
   { path: 'partners', component: PartnersSectionComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'sub-navbar', component: SubNavbarComponent },
+  { path: 'proven-success', component: ProvenSuccessComponent },
+  { path: 'about-partners', component: AboutUsPartnersComponent },
+  { path: 'mob-about-partners', component: MobAboutPartnersComponent },
+  { path: 'protfolio-about', component: PortfolioAboutComponent },
+  { path: 'landscape-a-partners', component: LandscapeAPartnersComponent },
 ];
 
 @NgModule({

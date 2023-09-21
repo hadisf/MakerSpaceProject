@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partners</title>
+    <link rel="stylesheet" href="mob-about-partners.component.css" />
+  </head>
+  <body>
+    <div class="partnersSection">
+      <div class="partnersContent container">
+        <h1>Our partners and investors</h1>
+      </div>
+
+      <div class="partnersSlider-ctn slider-container landscape-partners">
+        <swiper
+          [slidesPerView]="2"
+          [spaceBetween]="5"
+          [navigation]="true"
+          [pagination]="{ clickable: true }"
+          [autoplay]="{ delay: 2500, disableOnInteraction: false }"
+        >
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+  </body>
+</html>

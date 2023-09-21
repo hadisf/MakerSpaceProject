@@ -3,37 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slider1</title>
   </head>
   <body>
     <section id="more-recent-stories" aria-label="More Recent Stories">
       <div class="slider-container slider-container-1">
-        <div class="slider-buttons">
+        <div class="slider-buttons" style="margin: 0 4px 25px 5px !important">
           <h3 class="slider-title" style="color: black">More recent stories</h3>
-          <div>
-            <button
-              class="slider-button slider-button-left slider-button-left-1"
-              (click)="moveLeft()"
-            >
-              <i class="iconoir-arrow-left"></i>
-            </button>
-            <button
-              class="slider-button slider-button-right slider-button-right-1"
-              (click)="moveRight()"
-            >
-              <i class="iconoir-arrow-right"></i>
-            </button>
+
+          <div class="swiper-button-wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
-        <div class="slider-content-wrapper">
-          <div *ngFor="let slide of slides" class="slider-slide">
-            <img [src]="slide.imgSrc" alt="" />
-            <div class="div">
-              <h4>{{ slide.category }}</h4>
-              <h5 style="color: #14181a">
-                {{ slide.title }} <br />
-                <span>{{ slide.date }}</span>
-              </h5>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div *ngFor="let slide of slides" class="swiper-slide">
+              <img [src]="slide.imgSrc" alt="" />
+              <div class="div">
+                <h4>{{ slide.category }}</h4>
+                <h5 style="color: #14181a">
+                  {{ slide.title }} <br />
+                  <span>{{ slide.date }}</span>
+                </h5>
+              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="partners-about desktop-partners-about">
+      <h3>Our partners and investors</h3>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <hr class="partners-hr" />
+
+      <div class="partnersSlider-ctn slider-container">
+        <swiper [config]="config" [slidesPerView]="3" [spaceBetween]="5">
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" class="partners-img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" class="partners-img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" class="partners-img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </section>
+
+    <section class="mob-about-partners">
+      <app-mob-about-partners></app-mob-about-partners>
+    </section>
+  </body>
+</html>

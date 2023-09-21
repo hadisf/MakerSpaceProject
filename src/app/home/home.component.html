@@ -18,6 +18,8 @@
   </head>
   <body>
     <app-header></app-header>
+    <app-sub-navbar></app-sub-navbar>
+
     <main>
       <section id="main-banner" aria-label="Welcoming Section">
         <div id="text-content">
@@ -165,7 +167,10 @@
       <section id="company-slogan-wrapper">
         <div>
           <h2>We help ambitious companies scale to their potential.</h2>
-          <a href="" class="we-offer-button" style="background-color: #ff5500"
+          <a
+            href=""
+            class="we-offer-button"
+            style="background-color: #ff5500; margin-left: 1rem"
             >Our mission<i class="iconoir-arrow-right"></i
           ></a>
         </div>
@@ -182,60 +187,9 @@
       <div class="slogan-img-wrapper">
         <img src="assets/img/itp.png" alt="" />
       </div>
-      <section id="proven-stats-wrapper">
-        <h3>Proven success</h3>
-        <div id="stats-wrapper">
-          <div>
-            <h4>
-              94
-              <span class="percent" style="background-color: #f7f7f7"> % </span>
-            </h4>
-            <span></span>
-            <p>Evente te organizuara</p>
-          </div>
-          <div>
-            <h4>
-              94
-              <span class="percent" style="background-color: #f7f7f7"> % </span>
-            </h4>
-            <span></span>
-            <p>Ekipe perfituese</p>
-          </div>
-          <div>
-            <h4>
-              94
-              <span class="percent" style="background-color: #f7f7f7"> % </span>
-            </h4>
-            <span></span>
-            <p>Pjesemares ne evente</p>
-          </div>
-          <div>
-            <h4>
-              94
-              <span class="percent" style="background-color: #f7f7f7"> % </span>
-            </h4>
-            <span></span>
-            <p>Evente te organizuara</p>
-          </div>
 
-          <div>
-            <h4>
-              94
-              <span class="percent" style="background-color: #f7f7f7"> % </span>
-            </h4>
-            <span></span>
-            <p>Ekipe perfituese</p>
-          </div>
-          <div>
-            <h4>
-              94
-              <span class="percent" style="background-color: #f7f7f7"> % </span>
-            </h4>
-            <span></span>
-            <p>Pjesemares ne evente</p>
-          </div>
-        </div>
-      </section>
+      <app-proven-success></app-proven-success>
+
       <app-partners-section></app-partners-section>
       <section class="newsletter-wrapper">
         <h2>Stay in the known</h2>

@@ -6,9 +6,17 @@
   border: 1px solid #d7d7da;
   border-radius: 25px;
   padding: 8px;
+  margin-right: -1.1rem;
 }
+
 .policy-wrapper p {
-  font-size: 15.6px;
+  flex: 1 0 0;
+  color: var(--contrast-scale-color-contrast-medium, #72757c);
+  font-family: Moderat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 
 .chat {

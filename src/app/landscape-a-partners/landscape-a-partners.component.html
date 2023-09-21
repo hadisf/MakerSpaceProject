@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partners</title>
+    <link rel="stylesheet" href="landscape-a-partners.component.css" />
+  </head>
+  <body>
+    <div class="partnersSection">
+      <div class="partnersContent container">
+        <h1 style="text-align: center;">Our partners and investors</h1>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div
+          class="swiper-pagination"
+          style="color: red; margin-left: 5rem !important"
+        ></div>
+
+        <hr class="partners-hr" />
+      </div>
+
+      <div class="partnersSlider-ctn slider-container landscape-partners">
+        <swiper [config]="config" [slidesPerView]="2" [spaceBetween]="5">
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template
+            swiperSlide
+            *ngFor="let partnersItem of partnerItemsTransformed"
+          >
+            <div class="swiper-slide pSlider">
+              <div class="column">
+                <div *ngFor="let image of partnersItem" class="gizImg">
+                  <a href="#">
+                    <img [src]="image" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+  </body>
+</html>

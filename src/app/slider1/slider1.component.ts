@@ -90,7 +90,7 @@ export class Slider1Component {
   currentSlide = 0;
   slideWidth = 0;
   gap = 0;
-  slidesToShow = 3;
+  // slidesToShow = 3;
 
   constructor() {}
 

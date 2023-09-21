@@ -11,18 +11,17 @@ export class HeaderComponent implements OnInit {
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
   }
+
   constructor() {}
   ngOnInit() {}
   closeContent() {
     const container = document.querySelector('.container');
     const closeButton = document.querySelector('.close-button');
 
-    // nese elementi me klasin container ekziston, fshij elementin nga dom
     if (container) {
       container.remove();
     }
 
-    // nese ekziston fshij
     if (closeButton) {
       closeButton.remove();
     }

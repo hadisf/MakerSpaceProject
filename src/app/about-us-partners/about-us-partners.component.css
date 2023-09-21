@@ -1,0 +1,151 @@
+/* Import the base Swiper styles */
+@import "swiper/css";
+/* Import the Swiper navigation styles */
+@import "swiper/css/navigation";
+/* Import the Swiper pagination styles */
+@import "swiper/css/pagination";
+
+@import "/node_modules/swiper/swiper-bundle.min.css";
+@import "/node_modules/swiper/swiper-bundle.css";
+
+.partnersSection {
+  display: inline-flex;
+  background: #111;
+  width: 100%;
+  height: 728px;
+  flex-shrink: 0;
+  padding: 0 15px;
+}
+
+.gizImg {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.partners-img {
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+
+.slider-container {
+  padding-left: 10rem;
+  padding-right: 18rem;
+  width: 100%;
+  margin-top: 4rem;
+  height: 25.5vw;
+}
+
+.partners-about {
+  margin-top: 6rem;
+  width: 1680px;
+  height: 739px;
+  flex-shrink: 0;
+  background: #111;
+  padding: 30px;
+}
+
+.partners-about h3 {
+  color: var(--color-white-color-white, #fff);
+  font-family: Moderat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 10.5rem;
+  padding-top: 5rem !important;
+}
+
+.partners-hr {
+  width: 1160px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-left: 10.5rem;
+  margin-top: 1rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 278rem !important;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white !important;
+}
+
+.swiper-button-prev {
+  margin-left: 76.7rem;
+}
+
+.swiper-button-next {
+  margin-right: 11rem;
+}
+
+.mob-about-partners {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev {
+    margin-left: 5rem;
+  }
+
+  .swiper-button-next {
+    margin-right: 2rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: 350rem !important;
+  }
+
+  .desktop-partners-about {
+    display: none;
+  }
+
+  .mob-about-partners {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 995px) and (orientation: landscape) {
+  .swiper-slide {
+    overflow-y: hidden !important;
+    margin-top: -10rem;
+  }
+  .partners-about h3 {
+    margin-left: 1rem;
+  }
+
+  .swiper-button-next {
+    margin-right: 5px;
+  }
+
+  .swiper-button-prev {
+    margin-left: 44rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: 363rem !important;
+  }
+  .mob-about-partners {
+    display: inline !important;
+  }
+
+  .desktop-partners-about{
+    display: none;
+  }
+
+  .mob-about-partners{
+    margin-top: 40rem !important;
+  }
+
+}

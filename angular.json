@@ -73,7 +73,7 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "node_modules/swiper/swiper-bundle.css",
+              "./node_modules/swiper/swiper-bundle.css",
               "src/styles.css"
             ],
             "scripts": []

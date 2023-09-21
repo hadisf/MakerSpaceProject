@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio-about.component.css" />
+  </head>
+  <body>
+    <section
+      class="portfolio-wrapper"
+      style="background-color: #f7f7f7; height: 60vw; margin-left: -2.9rem"
+    >
+      <section class="projects-portfolio">
+        <h2>Projects portfolio</h2>
+        <div>
+          <p>
+            Runway has a diverse portfolio of 40+ start-ups, ranging from
+            plant-based dyes to plastic-free alternatives to safe drinking
+            water.
+          </p>
+          <button>View all</button>
+        </div>
+      </section>
+      <div class="swiper-container portfolio-slide-wrapper">
+        <div class="swiper-wrapper portfolio-slide">
+          <div *ngFor="let slide of slides" class="swiper-slide">
+            <div class="slide-img-1">
+              <img [src]="slide.image" alt="" class="protfolio-slide-img" />
+            </div>
+            <div class="slide-img-content">
+              <div class="frame">
+                <h5 class="category">{{ slide.category }}</h5>
+                <div class="date">{{ slide.date }}</div>
+              </div>
+              <h5 class="title">{{ slide.title }} <br /></h5>
+              <p class="paragraph">{{ slide.description }}</p>
+            </div>
+          </div>
+        </div>
+        <button class="portfolio-about-button-mob">View all</button>
+      </div>
+    </section>
+  </body>
+</html>
