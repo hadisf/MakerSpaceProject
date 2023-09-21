@@ -112,7 +112,7 @@ body {
   height: 30px;
   flex-shrink: 0;
   background: #fff;
-  padding: 88px 60px;
+  padding: 80px 60px;
   border-bottom: 1px red !important;
   margin: 1rem;
 }
@@ -199,6 +199,12 @@ body {
   display: none;
 }
 
+.portfolio-about-hr {
+  border: 1px solid #e4e4e6;
+  width: 114%;
+  margin-left: -1.6rem;
+}
+
 @media (max-width: 768px) {
   .projects-portfolio {
     display: inline-flex;
@@ -261,7 +267,8 @@ body {
     width: 203.16px;
     height: 54px;
     flex-shrink: 0;
-    padding: 70px 35px;
+    padding: 80px 15px 110px 20px;
+    margin-top: 1rem !important;
   }
 
   .frame {
@@ -322,6 +329,12 @@ body {
     font-weight: 700;
     line-height: normal;
     margin-left: 3rem !important;
+  }
+
+  .portfolio-about-hr {
+    border: 1px solid #e4e4e6;
+    width: 117%;
+    margin-left: -1.6rem;
   }
 }
 
@@ -431,5 +444,11 @@ body {
     height: 54px;
     flex-shrink: 0;
     padding: 80px 10px;
+  }
+
+  .portfolio-about-hr {
+    border: 1px solid #e4e4e6;
+    width: 117.5%;
+    margin-left: -1.6rem;
   }
 }

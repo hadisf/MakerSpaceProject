@@ -806,7 +806,8 @@ a {
     gap: 64px;
     margin-left: 0.1rem;
     padding: 10px;
-    margin-top: 3rem;
+    margin-top: 1.8rem;
+    margin-bottom: 5rem;
   }
 
   .photo-wrapper {
@@ -963,6 +964,10 @@ a {
 
   .landscape-partners {
     display: none;
+  }
+
+  .team{
+    margin-top: -4rem;
   }
 }
 

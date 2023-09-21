@@ -9,7 +9,6 @@ export class HeaderComponent implements OnInit {
   isNavbarOpen: boolean = false;
 
   toggleNavbar() {
-    this.isNavbarOpen = !this.isNavbarOpen;
   }
 
   constructor() {}
