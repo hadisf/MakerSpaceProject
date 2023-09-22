@@ -21,6 +21,8 @@ import { MobAboutPartnersComponent } from './mob-about-partners/mob-about-partne
 import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
 import { LandscapeAPartnersComponent } from './landscape-a-partners/landscape-a-partners.component';
 import { AboutTeamComponent } from './about-team/about-team.component';
+import { ContactUsComponent } from './Contact-us/contact-us/contact-us.component';
+import { OperatingTeamComponent } from './operating-team/operating-team.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { AboutTeamComponent } from './about-team/about-team.component';
     PortfolioAboutComponent,
     LandscapeAPartnersComponent,
     AboutTeamComponent,
+    ContactUsComponent,
+    OperatingTeamComponent,
   ],
 
   imports: [

@@ -1,17 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about-team',
-  templateUrl: './about-team.component.html',
-  styleUrls: ['./about-team.component.css'],
+  selector: 'app-operating-team',
+  templateUrl: './operating-team.component.html',
+  styleUrls: ['./operating-team.component.css'],
 })
-export class AboutTeamComponent {
-  // teamCategories: string[] = [
-  //   'Executive Board',
-  //   'Operating Team',
-  //   'Instructors',
-  // ];
-
+export class OperatingTeamComponent {
   teamMembers: any[] = [
     {
       name: 'Enis Qafëleshi',
@@ -21,12 +15,12 @@ export class AboutTeamComponent {
     {
       name: 'Enis Qafëleshi',
       position: 'CEO & Managing Partner',
-      photo: 'assets/img/team-member-2.png',
+      photo: 'assets/img/team-member-1.png',
     },
     {
       name: 'Enis Qafëleshi',
       position: 'CEO & Managing Partner',
-      photo: 'assets/img/team-member-3.png',
+      photo: 'assets/img/team-member-1.png',
     },
   ];
 }
