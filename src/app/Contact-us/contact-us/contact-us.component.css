@@ -3,7 +3,7 @@ body {
 }
 
 .section1 {
-  margin-top: 50px;
+  margin-top: 96px;
   margin-left: 30rem;
 }
 
@@ -34,7 +34,6 @@ body {
 .contact {
   /* margin-top: 70px; */
   display: flex;
-
 }
 
 .get-in {
@@ -192,8 +191,97 @@ body {
   align-items: center;
 }
 
-
-
 .last-wrapper {
   border-right: none !important;
+}
+
+.horizontal-line {
+  border-top: 1px solid #ccc;
+  margin: 0 9.5rem;
+  margin-left: 9rem;
+}
+
+@media (max-width: 768px) {
+  .horizontal-line {
+    border-top: 1px solid #ccc;
+    margin: 0 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .section1 {
+    margin-left: -4rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 96px;
+  }
+
+  .section h1 {
+    width: 380px;
+    color: var(--color-accent-color-accent, #14181a);
+    text-align: center;
+    font-family: Moderat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
+  }
+
+  .section1 p {
+    width: 380px;
+    color: var(--contrast-scale-color-contrast-medium, #72757c);
+    text-align: center;
+    font-family: Moderat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+    margin-left: 1px;
+    margin-top: -1px;
+    padding: 0 2px;
+  }
+
+  .get-in {
+    width: 380px;
+    color: var(--color-accent-color-accent, #14181a);
+    font-family: Moderat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47.77px; /* 149.28% */
+  }
+
+  .details {
+    display: flex;
+    width: 380px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .address-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+  }
+
+  .address-details span,
+  .contact-information span,
+  .follow-us p {
+    width: 439px;
+    color: var(--contrast-scale-color-contrast-medium, #72757c);
+    font-feature-settings: "case" on;
+    font-family: Moderat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}
+
+@media (max-width: 995px) and (orientation: landscape) {
 }
