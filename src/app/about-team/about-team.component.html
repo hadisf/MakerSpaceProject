@@ -13,10 +13,14 @@
         <span>Operating Team</span>
         <span>Instructors</span>
       </div>
-      <img
-        src="assets/img/our-team-selectmenu.png"
-        class="our-team-selectmenu"
-      />
+
+      <div class="category-select">
+        <select id="category">
+          <option value="executive">Executive Board</option>
+          <option value="operating">Operating Team</option>
+          <option value="instructors">Instructors</option>
+        </select>
+      </div>
 
       <div class="team-wrapper">
         <div class="photo-wrapper" *ngFor="let member of teamMembers">
@@ -49,5 +53,6 @@
         </div>
       </div>
     </section>
+
   </body>
 </html>

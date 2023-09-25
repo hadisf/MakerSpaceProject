@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-team.component.css'],
 })
 export class AboutTeamComponent {
+  selectedCategory: string = 'executive';
+
   // teamCategories: string[] = [
   //   'Executive Board',
   //   'Operating Team',

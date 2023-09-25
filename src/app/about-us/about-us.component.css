@@ -620,6 +620,10 @@ a {
   display: none;
 }
 
+.partnersLandscape {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .sub-nav-links {
     margin-left: -10rem !important;
@@ -1175,5 +1179,18 @@ a {
 
   .connect-wrapper {
     margin-left: 1.3rem;
+  }
+
+  .our-story-div {
+    height: 1121px;
+    background: #f7f7f7;
+  }
+
+  .partnersDesktop {
+    display: none;
+  }
+
+  .partnersLandscape {
+    display: inline;
   }
 }

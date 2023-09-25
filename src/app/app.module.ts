@@ -50,6 +50,7 @@ import { ContactUsComponent } from './Contact-us/contact-us/contact-us.component
     NgxPaginationModule,
     HttpClientModule,
     SwiperModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
