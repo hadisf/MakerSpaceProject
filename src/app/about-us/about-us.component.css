@@ -10,6 +10,10 @@ body {
   width: 1680px;
 }
 
+#more {
+  display: none;
+}
+
 .sub-nav-links {
   border: 1px solid #e4e4e6;
   background: #f7f7f7;
@@ -120,6 +124,10 @@ body {
   line-height: 30px; /* 150% */
   margin-left: 18.2rem;
   margin-top: 3px;
+}
+
+.our-story-mobile {
+  display: none;
 }
 
 .proven-success-about {
@@ -676,6 +684,15 @@ a {
     background: #f7f7f7;
     padding: 50px 0 !important;
     margin-top: -6.5rem;
+    max-height: 1000rem !important;
+  }
+
+  .our-story-desktop {
+    display: none;
+  }
+
+  .our-story-mobile {
+    display: inline;
   }
 
   .our-story-wrapper {
@@ -699,19 +716,39 @@ a {
   }
 
   .our-story-par {
-    align-self: stretch;
     color: var(--color-accent-color-accent, #14181a);
     font-family: Moderat;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 144.444% */
+    line-height: 26px;
     margin-left: 1.2rem;
-    width: fit-content;
+    /* padding: 0 400px 0 5px !important; */
+    padding-right: 25rem !important;
+  }
+
+  .read-more {
+    color: #f50;
+    font-family: Moderat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .read-less {
+    color: #f50;
+    font-family: Moderat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: -3.2rem;
+    margin-left: 10rem;
   }
 
   .proven-success-about {
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
 
   .section2-about {
@@ -1094,37 +1131,37 @@ a {
     gap: 6px;
     /* margin-top: -1.5rem; */
     margin-bottom: 2rem;
-    margin-left:  -1.5rem !important;
+    margin-left: -1.5rem !important;
   }
 
-  .photo-wrapper{
+  .photo-wrapper {
     width: 200px;
     height: 100px;
     margin: 0 35px;
   }
 
-  .imgs{
+  .imgs {
     width: 270px;
     height: 270px;
   }
 
-  .team-member-details{
+  .team-member-details {
     width: 247px;
   }
 
-  .team{
+  .team {
     margin-bottom: 7rem;
   }
 
-  .team-categories{
+  .team-categories {
     margin-left: 14.7rem;
   }
 
-  .name-detail h6{
+  .name-detail h6 {
     font-size: 20px;
   }
 
-  .name-detail p{
+  .name-detail p {
     font-size: 17px;
   }
 
@@ -1136,7 +1173,7 @@ a {
     display: inline !important;
   }
 
-  .connect-wrapper{
+  .connect-wrapper {
     margin-left: 1.3rem;
   }
 }

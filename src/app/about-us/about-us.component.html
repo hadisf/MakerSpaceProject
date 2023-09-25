@@ -17,15 +17,20 @@
 
     <div class="sub-nav-links">
       <ul class="nav-links-about">
-        <li><a href="about-us/#ourStory">Our story</a></li>
+        <li>
+          <a href="about-us/#ourStory" class="our-story-desktop">Our story</a>
+        </li>
+        <li>
+          <a href="about-us/#ourStoryy" class="our-story-mobile">Our story</a>
+        </li>
         <li><a href="about-us/#ourValues">Our values</a></li>
         <li><a href="about-us/#executiveBoard">Executive Board</a></li>
         <li>
           <a href="about-us/operating-team/#operatingTeam">Operating Team</a>
         </li>
         <li><a href="about-us/">Training Instructors</a></li>
-        <li><a href="about-us/">Partners & Supporters</a></li>
-        <li><a href="about-us/">Projects portfolio</a></li>
+        <li><a href="about-us/#partners">Partners & Supporters</a></li>
+        <li><a href="about-us/#projectsPortfolio">Projects portfolio</a></li>
       </ul>
     </div>
 
@@ -41,7 +46,7 @@
       </p>
       <img src="assets/img/itp.png" class="itp-photo-about" />
 
-      <div id="ourStory" class="our-story-div">
+      <div id="ourStory" class="our-story-div our-story-desktop">
         <div class="our-story-wrapper">
           <h3 class="our-story">Our Story</h3>
           <p class="our-story-par">
@@ -59,7 +64,6 @@
             aim to promote the development of new technologies and ideas that
             will shape the future.
             <br />
-
             <br />
             Our center provides a range of resources and services to support
             innovators, entrepreneurs, and makers in their endeavors. Our
@@ -68,6 +72,44 @@
             a variety of programs and events designed to help members develop
             their skills and turn their ideas into reality.
           </p>
+        </div>
+      </div>
+
+      <div id="ourStoryy" class="our-story-div our-story-mobile">
+        <div class="our-story-wrapper">
+          <h3 class="our-story">Our Story</h3>
+          <p class="our-story-par">
+            We are an innovation center founded in 2017 in the heart of Prizren,
+            Kosovo. Our mission is to foster innovation, creativity, and
+            collaboration by providing a unique space where individuals and
+            organizations can come together to share ideas, learn new skills,
+            and develop innovative solutions to today's challenges.
+            <br />
+            <br />
+            At Makerspace Innovation Center Prizren, we believe that innovation
+            is the key to success in today's rapidly changing world. By creating
+            a supportive environment where individuals from different
+            backgrounds and disciplines can collaborate and exchange ideas, we
+            aim to promote the development of new technologies and ideas.
+            <span (click)="toggleReadMore()" id="myBtn" class="read-more">{{
+              showMore ? " " : "Read More..."
+            }}</span>
+            <span id="more" [style.display]="showMore ? 'inline' : 'none'">
+              that will shape the future.
+              <br />
+              <br />
+              Our center provides a range of resources and services to support
+              innovators, entrepreneurs, and makers in their endeavors. Our
+              facilities include state-of-the-art equipment and tools,
+              co-working spaces, and classrooms for workshops and training
+              sessions. We offer a variety of programs and events designed to
+              help members develop their skills and turn their ideas into
+              reality.</span
+            >
+          </p>
+          <button class="read-less" (click)="toggleReadMore()" id="myBtn">
+            {{ showMore ? "Read less" : "" }}
+          </button>
         </div>
       </div>
     </section>
@@ -127,7 +169,7 @@
 
     <app-about-team></app-about-team>
 
-    <div class="desktop-partners">
+    <div id="partners" class="desktop-partners">
       <app-about-us-partners></app-about-us-partners>
     </div>
 
@@ -135,8 +177,9 @@
       <app-landscape-a-partners></app-landscape-a-partners>
     </div>
 
-    <app-portfolio-about></app-portfolio-about>
-
+    <div id="projectsPortfolio">
+      <app-portfolio-about></app-portfolio-about>
+    </div>
     <div class="connect-wrapper">
       <h1>Let's connect</h1>
       <p>

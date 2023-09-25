@@ -11,12 +11,8 @@ SwiperCore.use([Navigation, Pagination]);
   styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent implements AfterViewInit {
-
   isReadMoreVisible = false;
 
-  toggleReadMore() {
-    this.isReadMoreVisible = !this.isReadMoreVisible;
-  }
   @ViewChild('partnersSlider') partnersSlider: any;
   partnerItemsTransformed: any[] = [];
   swiper: Swiper | undefined;
@@ -42,5 +38,11 @@ export class AboutUsComponent implements AfterViewInit {
       results.push(this.partnerItems.slice(i, i + groups));
     }
     return results;
+  }
+
+  showMore = false;
+
+  toggleReadMore() {
+    this.showMore = !this.showMore;
   }
 }
