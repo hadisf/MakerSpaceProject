@@ -22,6 +22,8 @@ import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.compo
 import { LandscapeAPartnersComponent } from './landscape-a-partners/landscape-a-partners.component';
 import { AboutTeamComponent } from './about-team/about-team.component';
 import { ContactUsComponent } from './Contact-us/contact-us/contact-us.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { ContactUsComponent } from './Contact-us/contact-us/contact-us.component
     NgxPaginationModule,
     HttpClientModule,
     SwiperModule,
-    
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

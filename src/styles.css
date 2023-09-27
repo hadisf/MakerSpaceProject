@@ -1,9 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+
 @font-face {
   font-family: "Moderat";
-  src: url(./assets/Moderat-Black.eot);
+  src: url("../assets/Moderat-Regular.ttf") format("truetype");
 }
-
 * {
   margin: 0;
   padding: 0;

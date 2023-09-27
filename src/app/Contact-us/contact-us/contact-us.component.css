@@ -43,7 +43,7 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 47.77px; /* 132.693% */
+  line-height: 47.77px;
   padding: 0 10vw;
   margin-top: 70px;
 }
@@ -198,6 +198,54 @@ body {
   margin: 0 9.5rem;
   margin-left: 9rem;
 }
+.social-media-profile{
+  text-decoration: none;
+}
+.contact-form{
+  border: 1px solid var(--contrast-scale-color-bg-darker, #E4E4E6);
+  padding: 24px;
+  border-radius: 8px;
+  margin-right: 120px;
+}
+.invalid-feedback {
+  color: red;
+}
+.form-button{
+  width: 155px;
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #FF5500!important;
+  border-radius: 48px;
+  font-size: 16px;
+  border-color:  #FF5500!important;
+  margin-bottom: 24px;
+}
+.form-button:focus {
+  background-color: #FF5500!important;
+  border-color: #FF5500!important;
+}
+
+.is-invalid {
+  background-image: url("src\assets\img\input-error.svg");
+  background-repeat: no-repeat;
+  border-color: red;
+}
+.form-control{
+  color: #14181a;
+}
+label{
+  color: #72757c;
+}
+.form-check-label{
+  color: #14181a;
+}
+.contact-content{
+  margin-top: 70px;
+
+}
 
 @media (max-width: 768px) {
   .horizontal-line {
@@ -252,7 +300,7 @@ body {
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 47.77px; /* 149.28% */
+    line-height: 47.77px;
     margin-left: -1.2rem;
   }
 
@@ -401,6 +449,7 @@ body {
     font-weight: 700;
     line-height: 24px;
   }
+
 }
 
 @media (max-width: 995px) and (orientation: landscape) {
